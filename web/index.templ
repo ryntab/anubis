@@ -73,9 +73,9 @@ templ base(title string, body templ.Component, impressum *config.Impressum, hone
 				<footer>
 					<div class="centered-div">
 						<p>
-							{ localizer.T("protected_by") } <a href="https://github.com/TecharoHQ/anubis">Anubis</a> { localizer.T("protected_from") } <a
-	href="https://techaro.lol"
->Techaro</a>. { localizer.T("made_with") }.
+							{ localizer.T("protected_by") } <a href={ anubis.BrandURL }>{ anubis.BrandName }</a> { localizer.T("protected_from") } <a
+	href={ anubis.BrandOwnerURL }
+>{ anubis.BrandOwnerName }</a>. { localizer.T("made_with") }.
 						</p>
 						<p>{ localizer.T("mascot_design") } <a href="https://bsky.app/profile/celphase.bsky.social">{ localizer.T("celphase") }</a>.</p>
 						if impressum != nil {

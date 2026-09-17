@@ -24,6 +24,19 @@ func init() {
 // This is set from the Go module runtime version.
 var Version = "devel"
 
+// BrandName is the name shown in the challenge page footer. Override this in
+// custom forks to keep upstream updates while using your own branding.
+var BrandName = "Defibtech"
+
+// BrandURL is the project link shown in the challenge page footer.
+var BrandURL = "https://www.defibtech.com/"
+
+// BrandOwnerName is the entity shown after the protected-from text in the footer.
+var BrandOwnerName = "Defibtech"
+
+// BrandOwnerURL is the website shown after the protected-from text in the footer.
+var BrandOwnerURL = "Defibtech"
+
 // CookieName is the name of the cookie that Anubis uses in order to validate
 // access.
 var CookieName = "techaro.lol-anubis"
